@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: hostname
   author: Stas Stavnichuk
   description: set hostname
   license: BSD
