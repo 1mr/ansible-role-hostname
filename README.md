@@ -1,6 +1,6 @@
 Hostname
 ========
-[![Build Status](https://travis-ci.org/1mr/ansible-role-hostname.svg?branch=master)](https://travis-ci.org/1mr/ansible-role-hostname)
+[![Build Status](https://travis-ci.com/1mr/ansible-role-hostname.svg?branch=master)](https://travis-ci.com/1mr/ansible-role-hostname)
 
 This role helps to set hostname.
 
