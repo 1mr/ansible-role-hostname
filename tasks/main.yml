@@ -1,0 +1,10 @@
+---
+- name: install dependencies
+  apt: >
+    name={{ item }}
+  with_items:
+    - dbus
+
+- name: set hostname
+  hostname: >
+    name={{ inventory_hostname }}
