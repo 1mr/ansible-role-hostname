@@ -1,9 +1,7 @@
 ---
 - name: install dependencies
   apt: >
-    name={{ item }}
-  with_items:
-    - dbus
+    name=dbus
 
 - name: set hostname
   hostname: >
