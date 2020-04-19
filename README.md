@@ -1,6 +1,7 @@
+[![Build Status](https://travis-ci.com/1mr/ansible-role-hostname.svg?branch=master)](https://travis-ci.com/1mr/ansible-role-hostname)
+
 Hostname
 ========
-[![Build Status](https://travis-ci.com/1mr/ansible-role-hostname.svg?branch=master)](https://travis-ci.com/1mr/ansible-role-hostname)
 
 This role helps to set hostname.
 
@@ -29,4 +30,9 @@ Example Playbook
 License
 -------
 
-BSD
+MIT
+
+Author Information
+------------------
+
+This role was created by Stas Stavnichuk.

@@ -1,26 +1,25 @@
 ---
 language: python
+
 services: docker
+sudo: false
 
 env:
   global:
-    - ROLE_NAME: hostname
+    - ROLE_NAME: timezone
   matrix:
-    - MOLECULE_DISTRO: debian9
-    - MOLECULE_DISTRO: debian8
+    - MOLECULE_DISTRO: buster
+    - MOLECULE_DISTRO: stretch
 
 install:
-  # Install test dependencies.
-  - pip install molecule docker
-
+  - pip install yamllint ansible-lint flake8 molecule docker
+  
 before_script:
-  # Use actual Ansible Galaxy role name for the project directory.
   - cd ../
   - mv ansible-role-$ROLE_NAME 1mr.$ROLE_NAME
   - cd 1mr.$ROLE_NAME
 
 script:
-  # Run tests.
   - molecule test
 
 notifications:

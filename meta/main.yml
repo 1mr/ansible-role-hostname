@@ -2,15 +2,16 @@
 galaxy_info:
   role_name: hostname
   author: Stas Stavnichuk
-  description: set hostname
+  description: change system hostname
   license: BSD
   min_ansible_version: 1.4
   platforms:
     - name: Debian
       versions:
+        - buster
+        - stretch
         - jessie
-        - squeeze
-        - wheezy
   galaxy_tags:
     - system
     - hostname
+    - debian
