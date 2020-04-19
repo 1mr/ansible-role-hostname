@@ -6,7 +6,7 @@ sudo: false
 
 env:
   global:
-    - ROLE_NAME: timezone
+    - ROLE_NAME: hostname
   matrix:
     - MOLECULE_DISTRO: buster
     - MOLECULE_DISTRO: stretch
